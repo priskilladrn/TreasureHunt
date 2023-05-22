@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26084C1C2A193EF400874014 /* WorldTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = 26084C1A2A193EF400874014 /* WorldTileSet.sks */; };
+		2658262F2A1A2456003C9767 /* SecondLevelScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2658262E2A1A2456003C9767 /* SecondLevelScene.sks */; };
+		26615B142A1A2724000FD10D /* FirstLevelScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 26615B132A1A2724000FD10D /* FirstLevelScene.sks */; };
+		26EBD5732A17B97C00FD0995 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBD5722A17B97C00FD0995 /* AppDelegate.swift */; };
+		26EBD5752A17B97C00FD0995 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 26EBD5742A17B97C00FD0995 /* GameScene.sks */; };
+		26EBD5772A17B97C00FD0995 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 26EBD5762A17B97C00FD0995 /* Actions.sks */; };
+		26EBD5792A17B97C00FD0995 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBD5782A17B97C00FD0995 /* GameScene.swift */; };
+		26EBD57B2A17B97C00FD0995 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBD57A2A17B97C00FD0995 /* GameViewController.swift */; };
+		26EBD57E2A17B97C00FD0995 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26EBD57C2A17B97C00FD0995 /* Main.storyboard */; };
+		26EBD5802A17B97E00FD0995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26EBD57F2A17B97E00FD0995 /* Assets.xcassets */; };
+		26EBD5832A17B97E00FD0995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26EBD5812A17B97E00FD0995 /* LaunchScreen.storyboard */; };
+		26EBD58F2A17D97200FD0995 /* PixelGameFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26EBD58E2A17D97200FD0995 /* PixelGameFont.ttf */; };
+		26EBD5952A17EB2300FD0995 /* LevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBD5942A17EB2300FD0995 /* LevelScene.swift */; };
+		26EBD5992A17EE1900FD0995 /* FirstLevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBD5982A17EE1900FD0995 /* FirstLevelScene.swift */; };
+		26EBD59B2A17F08C00FD0995 /* SecondLevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBD59A2A17F08C00FD0995 /* SecondLevelScene.swift */; };
+		26EBD59D2A17F09500FD0995 /* ThirdLevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBD59C2A17F09500FD0995 /* ThirdLevelScene.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		26084C1A2A193EF400874014 /* WorldTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = WorldTileSet.sks; sourceTree = "<group>"; };
+		2658262E2A1A2456003C9767 /* SecondLevelScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SecondLevelScene.sks; sourceTree = "<group>"; };
+		26615B132A1A2724000FD10D /* FirstLevelScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FirstLevelScene.sks; sourceTree = "<group>"; };
+		26EBD56F2A17B97C00FD0995 /* TreasureHuntGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreasureHuntGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26EBD5722A17B97C00FD0995 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		26EBD5742A17B97C00FD0995 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		26EBD5762A17B97C00FD0995 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		26EBD5782A17B97C00FD0995 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		26EBD57A2A17B97C00FD0995 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		26EBD57D2A17B97C00FD0995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26EBD57F2A17B97E00FD0995 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26EBD5822A17B97E00FD0995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		26EBD58D2A17D96100FD0995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26EBD58E2A17D97200FD0995 /* PixelGameFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PixelGameFont.ttf; sourceTree = "<group>"; };
+		26EBD5942A17EB2300FD0995 /* LevelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelScene.swift; sourceTree = "<group>"; };
+		26EBD5982A17EE1900FD0995 /* FirstLevelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLevelScene.swift; sourceTree = "<group>"; };
+		26EBD59A2A17F08C00FD0995 /* SecondLevelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondLevelScene.swift; sourceTree = "<group>"; };
+		26EBD59C2A17F09500FD0995 /* ThirdLevelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdLevelScene.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26EBD56C2A17B97C00FD0995 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26084C102A186F9F00874014 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				26EBD5722A17B97C00FD0995 /* AppDelegate.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		26084C112A186FD300874014 /* Mains */ = {
+			isa = PBXGroup;
+			children = (
+				26EBD57C2A17B97C00FD0995 /* Main.storyboard */,
+				26EBD5812A17B97E00FD0995 /* LaunchScreen.storyboard */,
+			);
+			path = Mains;
+			sourceTree = "<group>";
+		};
+		26084C122A18700200874014 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				26EBD58E2A17D97200FD0995 /* PixelGameFont.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		26EBD5662A17B97C00FD0995 = {
+			isa = PBXGroup;
+			children = (
+				26EBD5712A17B97C00FD0995 /* TreasureHuntGame */,
+				26EBD5702A17B97C00FD0995 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26EBD5702A17B97C00FD0995 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26EBD56F2A17B97C00FD0995 /* TreasureHuntGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26EBD5712A17B97C00FD0995 /* TreasureHuntGame */ = {
+			isa = PBXGroup;
+			children = (
+				26084C102A186F9F00874014 /* Delegates */,
+				26EBD5762A17B97C00FD0995 /* Actions.sks */,
+				26084C1A2A193EF400874014 /* WorldTileSet.sks */,
+				26EBD58B2A17D1A200FD0995 /* Scenes */,
+				26EBD5892A17D13F00FD0995 /* Controllers */,
+				26084C112A186FD300874014 /* Mains */,
+				26EBD58A2A17D15000FD0995 /* Resources */,
+			);
+			path = TreasureHuntGame;
+			sourceTree = "<group>";
+		};
+		26EBD5892A17D13F00FD0995 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				26EBD57A2A17B97C00FD0995 /* GameViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		26EBD58A2A17D15000FD0995 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				26EBD58D2A17D96100FD0995 /* Info.plist */,
+				26EBD58C2A17D27400FD0995 /* Sound */,
+				26084C122A18700200874014 /* Fonts */,
+				26EBD57F2A17B97E00FD0995 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		26EBD58B2A17D1A200FD0995 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				26EBD5742A17B97C00FD0995 /* GameScene.sks */,
+				26615B132A1A2724000FD10D /* FirstLevelScene.sks */,
+				2658262E2A1A2456003C9767 /* SecondLevelScene.sks */,
+				26EBD5782A17B97C00FD0995 /* GameScene.swift */,
+				26EBD5982A17EE1900FD0995 /* FirstLevelScene.swift */,
+				26EBD59A2A17F08C00FD0995 /* SecondLevelScene.swift */,
+				26EBD59C2A17F09500FD0995 /* ThirdLevelScene.swift */,
+				26EBD5942A17EB2300FD0995 /* LevelScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		26EBD58C2A17D27400FD0995 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26EBD56E2A17B97C00FD0995 /* TreasureHuntGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26EBD5862A17B97E00FD0995 /* Build configuration list for PBXNativeTarget "TreasureHuntGame" */;
+			buildPhases = (
+				26EBD56B2A17B97C00FD0995 /* Sources */,
+				26EBD56C2A17B97C00FD0995 /* Frameworks */,
+				26EBD56D2A17B97C00FD0995 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TreasureHuntGame;
+			productName = TreasureHuntGame;
+			productReference = 26EBD56F2A17B97C00FD0995 /* TreasureHuntGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26EBD5672A17B97C00FD0995 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					26EBD56E2A17B97C00FD0995 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 26EBD56A2A17B97C00FD0995 /* Build configuration list for PBXProject "TreasureHuntGame" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26EBD5662A17B97C00FD0995;
+			productRefGroup = 26EBD5702A17B97C00FD0995 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26EBD56E2A17B97C00FD0995 /* TreasureHuntGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26EBD56D2A17B97C00FD0995 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EBD57E2A17B97C00FD0995 /* Main.storyboard in Resources */,
+				26EBD5752A17B97C00FD0995 /* GameScene.sks in Resources */,
+				26084C1C2A193EF400874014 /* WorldTileSet.sks in Resources */,
+				26EBD58F2A17D97200FD0995 /* PixelGameFont.ttf in Resources */,
+				26EBD5802A17B97E00FD0995 /* Assets.xcassets in Resources */,
+				2658262F2A1A2456003C9767 /* SecondLevelScene.sks in Resources */,
+				26EBD5832A17B97E00FD0995 /* LaunchScreen.storyboard in Resources */,
+				26EBD5772A17B97C00FD0995 /* Actions.sks in Resources */,
+				26615B142A1A2724000FD10D /* FirstLevelScene.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26EBD56B2A17B97C00FD0995 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EBD5792A17B97C00FD0995 /* GameScene.swift in Sources */,
+				26EBD5952A17EB2300FD0995 /* LevelScene.swift in Sources */,
+				26EBD57B2A17B97C00FD0995 /* GameViewController.swift in Sources */,
+				26EBD5992A17EE1900FD0995 /* FirstLevelScene.swift in Sources */,
+				26EBD5732A17B97C00FD0995 /* AppDelegate.swift in Sources */,
+				26EBD59D2A17F09500FD0995 /* ThirdLevelScene.swift in Sources */,
+				26EBD59B2A17F08C00FD0995 /* SecondLevelScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		26EBD57C2A17B97C00FD0995 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26EBD57D2A17B97C00FD0995 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		26EBD5812A17B97E00FD0995 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26EBD5822A17B97E00FD0995 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26EBD5842A17B97E00FD0995 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		26EBD5852A17B97E00FD0995 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26EBD5872A17B97E00FD0995 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HABTZ65X44;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TreasureHuntGame/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.priskilla.TreasureHuntGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		26EBD5882A17B97E00FD0995 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HABTZ65X44;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TreasureHuntGame/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.priskilla.TreasureHuntGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26EBD56A2A17B97C00FD0995 /* Build configuration list for PBXProject "TreasureHuntGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26EBD5842A17B97E00FD0995 /* Debug */,
+				26EBD5852A17B97E00FD0995 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26EBD5862A17B97E00FD0995 /* Build configuration list for PBXNativeTarget "TreasureHuntGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26EBD5872A17B97E00FD0995 /* Debug */,
+				26EBD5882A17B97E00FD0995 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26EBD5672A17B97C00FD0995 /* Project object */;
+}
