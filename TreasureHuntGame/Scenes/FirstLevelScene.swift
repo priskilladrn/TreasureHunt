@@ -238,7 +238,6 @@ class FirstLevelScene: SKScene, SKPhysicsContactDelegate {
                             
                             if highlightPosition == zonkPosition {
                                 zonkArray[i].isHidden = false
-//                                
                                 break
                             }
                         }
