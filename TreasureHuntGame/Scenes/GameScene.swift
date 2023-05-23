@@ -10,7 +10,6 @@ import GameplayKit
 
 class GameScene: SKScene {
     var button = SKSpriteNode()
-    var level: Int = 1
     
     override func didMove(to view: SKView) {
         setupNodes()
@@ -22,7 +21,7 @@ class GameScene: SKScene {
             
             if button.contains(location) {
                 let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
-                let levelScene = LevelScene(size: self.size, level: level)
+                let levelScene = LevelScene(size: self.size, level: 2)
                 view?.presentScene(levelScene, transition: reveal)
             }
         }

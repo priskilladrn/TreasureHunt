@@ -23,6 +23,7 @@ class FirstLevelScene: SKScene, SKPhysicsContactDelegate {
     var treasurePos = CGPoint(x: 0, y: 0)
     var bombPos = CGPoint(x: 0, y: 0)
     
+    var gameover: Bool = false
     var herMovesLeft = false
     var herMovesRight = false
     var herMovesUp = false
@@ -60,6 +61,7 @@ class FirstLevelScene: SKScene, SKPhysicsContactDelegate {
         
         addPerson()
         addHighlight()
+        
         addObject()
         actionButton = childNode(withName: "actionButton") as! SKSpriteNode
     }
@@ -167,19 +169,19 @@ class FirstLevelScene: SKScene, SKPhysicsContactDelegate {
             let touchNode = self.nodes(at: position)
             
             for node in touchNode {
-                if node.name == "buttonLeft" {
+                if node.name == "buttonLeft" && !gameover {
                     herMovesLeft = true
                 }
                 
-                if node.name == "buttonRight" {
+                if node.name == "buttonRight" && !gameover {
                     herMovesRight = true
                 }
                 
-                if node.name == "buttonUp" {
+                if node.name == "buttonUp" && !gameover {
                     herMovesUp = true
                 }
                 
-                if node.name == "buttonDown" {
+                if node.name == "buttonDown" && !gameover {
                     herMovesDown = true
                 }
             }
@@ -192,33 +194,44 @@ class FirstLevelScene: SKScene, SKPhysicsContactDelegate {
             let touchNode = self.nodes(at: position)
             
             for node in touchNode {
-                if node.name == "buttonLeft" {
+                if node.name == "buttonLeft" && !gameover {
                     herMovesLeft = false
                 }
                 
-                if node.name == "buttonRight" {
+                if node.name == "buttonRight" && !gameover {
                     herMovesRight = false
                 }
                 
-                if node.name == "buttonUp" {
+                if node.name == "buttonUp" && !gameover {
                     herMovesUp = false
                 }
                 
-                if node.name == "buttonDown" {
+                if node.name == "buttonDown" && !gameover {
                     herMovesDown = false
                 }
                 
-                if actionButton.contains(position) {
+                if actionButton.contains(position) && !gameover {
                     let highlightPosition = CGPoint(x: round(highlight.position.x * 10) / 10.0, y: round(highlight.position.y * 10) / 10.0 )
                     let bombPosition = CGPoint(x: round(bombPos.x * 10) / 10.0, y: round(bombPos.y * 10) / 10.0)
                     let treasurePosition = CGPoint(x: round(treasurePos.x * 10) / 10.0, y: round(treasurePos.y * 10) / 10.0)
                     
                     if highlightPosition == treasurePosition {
                         treasure.isHidden = false
+                        gameover = true
+                        run(SKAction.sequence([
+                            SKAction.wait(forDuration: 1.0),
+                            SKAction.run() { [weak self] in
+                                guard let `self` = self else { return }
+                                let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
+                                let levelScene = LevelScene(size: view!.bounds.size, level: 2)
+                                view?.presentScene(levelScene, transition: reveal)
+                            }
+                        ]))
                     }
                     
                     else if highlightPosition == bombPosition {
                         bomb.isHidden = false
+                        gameover = true
                         run(SKAction.sequence([
                             SKAction.wait(forDuration: 1.0),
                             SKAction.run() { [weak self] in
@@ -233,11 +246,11 @@ class FirstLevelScene: SKScene, SKPhysicsContactDelegate {
                     }
                     
                     else {
-                        for i in 0..<7 {
-                            let zonkPosition = CGPoint(x: round(zonkArray[i].position.x * 10) / 10.0, y: round(zonkArray[i].position.y * 10) / 10.0)
+                        for array in zonkArray {
+                            let zonkPosition = CGPoint(x: round(array.position.x * 10) / 10.0, y: round(array.position.y * 10) / 10.0)
                             
-                            if highlightPosition == zonkPosition {
-                                zonkArray[i].isHidden = false
+                            if highlightPosition == zonkPosition && array.isHidden == true {
+                                array.isHidden = false
                                 break
                             }
                         }

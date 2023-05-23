@@ -21,13 +21,28 @@ class LevelScene: SKScene {
             addChild(label)
         
         run(SKAction.sequence([
-            SKAction.wait(forDuration: 3.0),
+            SKAction.wait(forDuration: 1.5),
             SKAction.run() { [weak self] in
                 guard let `self` = self else { return }
                 let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
-                let scene = FirstLevelScene(fileNamed: "FirstLevelScene")
-                scene?.scaleMode = .aspectFill
-                self.view?.presentScene(scene!, transition:reveal)
+                switch (level) {
+                case 1:
+                    let scene = FirstLevelScene(fileNamed: "FirstLevelScene")
+                    scene?.scaleMode = .aspectFill
+                    self.view?.presentScene(scene!, transition:reveal)
+                case 2:
+                    let scene = SecondLevelScene(fileNamed: "SecondLevelScene")
+                    scene?.scaleMode = .aspectFill
+                    self.view?.presentScene(scene!, transition:reveal)
+                case 3:
+                    let scene = ThirdLevelScene(fileNamed: "ThirdLevelScene")
+                    scene?.scaleMode = .aspectFill
+                    self.view?.presentScene(scene!, transition:reveal)
+                default:
+                    let scene = GameScene()
+                    scene.scaleMode = .aspectFill
+                    self.view?.presentScene(scene, transition:reveal)
+                }
             }
         ]))
     }
