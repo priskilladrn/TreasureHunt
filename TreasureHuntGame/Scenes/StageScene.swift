@@ -209,7 +209,7 @@ class StageScene: SKScene {
                                 SKAction.wait(forDuration: 1.0),
                                 SKAction.run() { [weak self] in
                                     guard let `self` = self else { return }
-                                    let reveal = SKTransition.flipHorizontal(withDuration: 1)
+                                    let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
                                     
                                     let levelScene = LevelScene(size: view!.bounds.size, level: level)
                                     let creditScene = CreditScene(size: view!.bounds.size, titleName: "Thank You For Playing")
@@ -234,7 +234,7 @@ class StageScene: SKScene {
                                 SKAction.wait(forDuration: 1.0),
                                 SKAction.run() { [weak self] in
                                     guard let `self` = self else { return }
-                                    let reveal = SKTransition.flipHorizontal(withDuration: 1)
+                                    let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
                                     let creditScene = CreditScene(size: view!.bounds.size, titleName: "GAME OVER")
                                     view?.presentScene(creditScene, transition: reveal)
                                 }

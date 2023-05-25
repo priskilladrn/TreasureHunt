@@ -21,10 +21,10 @@ class LevelScene: SKScene {
         addChild(label)
         
         run(SKAction.sequence([
-            SKAction.wait(forDuration: 1),
+            SKAction.wait(forDuration: 0.5),
             SKAction.run() { [weak self] in
                 guard let `self` = self else { return }
-                let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
+                let reveal = SKTransition.flipHorizontal(withDuration: 1)
                 switch (level) {
                 case 1:
                     let scene = StageScene(fileNamed: "FirstLevelScene")!
