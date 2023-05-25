@@ -21,12 +21,13 @@ class GameScene: SKScene {
             
             if button.contains(location) {
                 let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
-                let levelScene = LevelScene(size: self.size, level: 2)
+                let levelScene = LevelScene(size: self.size, level: 1)
                 view?.presentScene(levelScene, transition: reveal)
             }
         }
     }
 }
+
 
 extension GameScene {
     func setupNodes() {

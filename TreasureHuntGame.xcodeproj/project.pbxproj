@@ -8,14 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		26084C1C2A193EF400874014 /* WorldTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = 26084C1A2A193EF400874014 /* WorldTileSet.sks */; };
+		261FDC232A1CB89800E2D02A /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 261FDC222A1CB89800E2D02A /* backgroundMusic.mp3 */; };
+		261FDC2F2A1CBF3800E2D02A /* shovelSFX.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 261FDC2E2A1CBF3800E2D02A /* shovelSFX.mp3 */; };
+		261FDC312A1CBF4000E2D02A /* walkingSFX.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 261FDC302A1CBF4000E2D02A /* walkingSFX.mp3 */; };
+		261FDC332A1CC03700E2D02A /* bombSFX.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 261FDC322A1CC03700E2D02A /* bombSFX.mp3 */; };
+		261FDC352A1CC13100E2D02A /* treasureSFX.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 261FDC342A1CC13100E2D02A /* treasureSFX.mp3 */; };
+		261FDC392A1CC3C600E2D02A /* CreditScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261FDC382A1CC3C600E2D02A /* CreditScene.swift */; };
 		2658262F2A1A2456003C9767 /* SecondLevelScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2658262E2A1A2456003C9767 /* SecondLevelScene.sks */; };
 		26615B142A1A2724000FD10D /* FirstLevelScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 26615B132A1A2724000FD10D /* FirstLevelScene.sks */; };
-		26DB8B442A1C65C000CC8DF1 /* ContactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DB8B432A1C65C000CC8DF1 /* ContactManager.swift */; };
-		26DB8B462A1C66A600CC8DF1 /* Controllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DB8B452A1C66A600CC8DF1 /* Controllers.swift */; };
 		26DB8B532A1C746F00CC8DF1 /* ThirdLevelScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 26DB8B522A1C746F00CC8DF1 /* ThirdLevelScene.sks */; };
+		26DC6DE32A1DD6AC0036A3DF /* ContactHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC6DE22A1DD6AC0036A3DF /* ContactHelper.swift */; };
+		26DC6DE52A1DD7110036A3DF /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DC6DE42A1DD7110036A3DF /* Person.swift */; };
 		26EBD5732A17B97C00FD0995 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBD5722A17B97C00FD0995 /* AppDelegate.swift */; };
 		26EBD5752A17B97C00FD0995 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 26EBD5742A17B97C00FD0995 /* GameScene.sks */; };
-		26EBD5772A17B97C00FD0995 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 26EBD5762A17B97C00FD0995 /* Actions.sks */; };
 		26EBD5792A17B97C00FD0995 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBD5782A17B97C00FD0995 /* GameScene.swift */; };
 		26EBD57B2A17B97C00FD0995 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBD57A2A17B97C00FD0995 /* GameViewController.swift */; };
 		26EBD57E2A17B97C00FD0995 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26EBD57C2A17B97C00FD0995 /* Main.storyboard */; };
@@ -23,22 +28,25 @@
 		26EBD5832A17B97E00FD0995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26EBD5812A17B97E00FD0995 /* LaunchScreen.storyboard */; };
 		26EBD58F2A17D97200FD0995 /* PixelGameFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26EBD58E2A17D97200FD0995 /* PixelGameFont.ttf */; };
 		26EBD5952A17EB2300FD0995 /* LevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBD5942A17EB2300FD0995 /* LevelScene.swift */; };
-		26EBD5992A17EE1900FD0995 /* FirstLevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBD5982A17EE1900FD0995 /* FirstLevelScene.swift */; };
-		26EBD59B2A17F08C00FD0995 /* SecondLevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBD59A2A17F08C00FD0995 /* SecondLevelScene.swift */; };
-		26EBD59D2A17F09500FD0995 /* ThirdLevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBD59C2A17F09500FD0995 /* ThirdLevelScene.swift */; };
+		26EBD5992A17EE1900FD0995 /* StageScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EBD5982A17EE1900FD0995 /* StageScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26084C1A2A193EF400874014 /* WorldTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = WorldTileSet.sks; sourceTree = "<group>"; };
+		261FDC222A1CB89800E2D02A /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
+		261FDC2E2A1CBF3800E2D02A /* shovelSFX.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shovelSFX.mp3; sourceTree = "<group>"; };
+		261FDC302A1CBF4000E2D02A /* walkingSFX.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = walkingSFX.mp3; sourceTree = "<group>"; };
+		261FDC322A1CC03700E2D02A /* bombSFX.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bombSFX.mp3; sourceTree = "<group>"; };
+		261FDC342A1CC13100E2D02A /* treasureSFX.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = treasureSFX.mp3; sourceTree = "<group>"; };
+		261FDC382A1CC3C600E2D02A /* CreditScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScene.swift; sourceTree = "<group>"; };
 		2658262E2A1A2456003C9767 /* SecondLevelScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SecondLevelScene.sks; sourceTree = "<group>"; };
 		26615B132A1A2724000FD10D /* FirstLevelScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FirstLevelScene.sks; sourceTree = "<group>"; };
-		26DB8B432A1C65C000CC8DF1 /* ContactManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactManager.swift; sourceTree = "<group>"; };
-		26DB8B452A1C66A600CC8DF1 /* Controllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controllers.swift; sourceTree = "<group>"; };
 		26DB8B522A1C746F00CC8DF1 /* ThirdLevelScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ThirdLevelScene.sks; sourceTree = "<group>"; };
-		26EBD56F2A17B97C00FD0995 /* TreasureHuntGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreasureHuntGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26DC6DE22A1DD6AC0036A3DF /* ContactHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactHelper.swift; sourceTree = "<group>"; };
+		26DC6DE42A1DD7110036A3DF /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		26EBD56F2A17B97C00FD0995 /* Treasure Hunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Treasure Hunt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26EBD5722A17B97C00FD0995 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26EBD5742A17B97C00FD0995 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		26EBD5762A17B97C00FD0995 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		26EBD5782A17B97C00FD0995 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		26EBD57A2A17B97C00FD0995 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		26EBD57D2A17B97C00FD0995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,9 +55,7 @@
 		26EBD58D2A17D96100FD0995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26EBD58E2A17D97200FD0995 /* PixelGameFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PixelGameFont.ttf; sourceTree = "<group>"; };
 		26EBD5942A17EB2300FD0995 /* LevelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelScene.swift; sourceTree = "<group>"; };
-		26EBD5982A17EE1900FD0995 /* FirstLevelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLevelScene.swift; sourceTree = "<group>"; };
-		26EBD59A2A17F08C00FD0995 /* SecondLevelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondLevelScene.swift; sourceTree = "<group>"; };
-		26EBD59C2A17F09500FD0995 /* ThirdLevelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdLevelScene.swift; sourceTree = "<group>"; };
+		26EBD5982A17EE1900FD0995 /* StageScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,22 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		26DC6DEA2A1DDAC40036A3DF /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				26DC6DE42A1DD7110036A3DF /* Person.swift */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		26DC6DEB2A1DDAE80036A3DF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				26DC6DE22A1DD6AC0036A3DF /* ContactHelper.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		26EBD5662A17B97C00FD0995 = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +121,7 @@
 		26EBD5702A17B97C00FD0995 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				26EBD56F2A17B97C00FD0995 /* TreasureHuntGame.app */,
+				26EBD56F2A17B97C00FD0995 /* Treasure Hunt.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,13 +130,11 @@
 			isa = PBXGroup;
 			children = (
 				26084C102A186F9F00874014 /* Delegates */,
-				26EBD5762A17B97C00FD0995 /* Actions.sks */,
-				26084C1A2A193EF400874014 /* WorldTileSet.sks */,
+				26DC6DEA2A1DDAC40036A3DF /* Node */,
 				26EBD58B2A17D1A200FD0995 /* Scenes */,
 				26EBD5892A17D13F00FD0995 /* Controllers */,
 				26084C112A186FD300874014 /* Mains */,
-				26DB8B452A1C66A600CC8DF1 /* Controllers.swift */,
-				26DB8B432A1C65C000CC8DF1 /* ContactManager.swift */,
+				26DC6DEB2A1DDAE80036A3DF /* Extension */,
 				26EBD58A2A17D15000FD0995 /* Resources */,
 			);
 			path = TreasureHuntGame;
@@ -132,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				26EBD58D2A17D96100FD0995 /* Info.plist */,
+				26084C1A2A193EF400874014 /* WorldTileSet.sks */,
 				26EBD58C2A17D27400FD0995 /* Sound */,
 				26084C122A18700200874014 /* Fonts */,
 				26EBD57F2A17B97E00FD0995 /* Assets.xcassets */,
@@ -147,10 +168,9 @@
 				2658262E2A1A2456003C9767 /* SecondLevelScene.sks */,
 				26DB8B522A1C746F00CC8DF1 /* ThirdLevelScene.sks */,
 				26EBD5782A17B97C00FD0995 /* GameScene.swift */,
-				26EBD5982A17EE1900FD0995 /* FirstLevelScene.swift */,
-				26EBD59A2A17F08C00FD0995 /* SecondLevelScene.swift */,
-				26EBD59C2A17F09500FD0995 /* ThirdLevelScene.swift */,
+				26EBD5982A17EE1900FD0995 /* StageScene.swift */,
 				26EBD5942A17EB2300FD0995 /* LevelScene.swift */,
+				261FDC382A1CC3C600E2D02A /* CreditScene.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -158,6 +178,11 @@
 		26EBD58C2A17D27400FD0995 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
+				261FDC342A1CC13100E2D02A /* treasureSFX.mp3 */,
+				261FDC322A1CC03700E2D02A /* bombSFX.mp3 */,
+				261FDC302A1CBF4000E2D02A /* walkingSFX.mp3 */,
+				261FDC2E2A1CBF3800E2D02A /* shovelSFX.mp3 */,
+				261FDC222A1CB89800E2D02A /* backgroundMusic.mp3 */,
 			);
 			path = Sound;
 			sourceTree = "<group>";
@@ -179,7 +204,7 @@
 			);
 			name = TreasureHuntGame;
 			productName = TreasureHuntGame;
-			productReference = 26EBD56F2A17B97C00FD0995 /* TreasureHuntGame.app */;
+			productReference = 26EBD56F2A17B97C00FD0995 /* Treasure Hunt.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -225,11 +250,15 @@
 				26084C1C2A193EF400874014 /* WorldTileSet.sks in Resources */,
 				26EBD58F2A17D97200FD0995 /* PixelGameFont.ttf in Resources */,
 				26EBD5802A17B97E00FD0995 /* Assets.xcassets in Resources */,
+				261FDC352A1CC13100E2D02A /* treasureSFX.mp3 in Resources */,
+				261FDC332A1CC03700E2D02A /* bombSFX.mp3 in Resources */,
+				261FDC312A1CBF4000E2D02A /* walkingSFX.mp3 in Resources */,
 				2658262F2A1A2456003C9767 /* SecondLevelScene.sks in Resources */,
+				261FDC232A1CB89800E2D02A /* backgroundMusic.mp3 in Resources */,
 				26EBD5832A17B97E00FD0995 /* LaunchScreen.storyboard in Resources */,
-				26EBD5772A17B97C00FD0995 /* Actions.sks in Resources */,
 				26615B142A1A2724000FD10D /* FirstLevelScene.sks in Resources */,
 				26DB8B532A1C746F00CC8DF1 /* ThirdLevelScene.sks in Resources */,
+				261FDC2F2A1CBF3800E2D02A /* shovelSFX.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,15 +269,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26DC6DE52A1DD7110036A3DF /* Person.swift in Sources */,
 				26EBD5792A17B97C00FD0995 /* GameScene.swift in Sources */,
 				26EBD5952A17EB2300FD0995 /* LevelScene.swift in Sources */,
 				26EBD57B2A17B97C00FD0995 /* GameViewController.swift in Sources */,
-				26EBD5992A17EE1900FD0995 /* FirstLevelScene.swift in Sources */,
+				26DC6DE32A1DD6AC0036A3DF /* ContactHelper.swift in Sources */,
+				26EBD5992A17EE1900FD0995 /* StageScene.swift in Sources */,
 				26EBD5732A17B97C00FD0995 /* AppDelegate.swift in Sources */,
-				26EBD59D2A17F09500FD0995 /* ThirdLevelScene.swift in Sources */,
-				26DB8B442A1C65C000CC8DF1 /* ContactManager.swift in Sources */,
-				26DB8B462A1C66A600CC8DF1 /* Controllers.swift in Sources */,
-				26EBD59B2A17F08C00FD0995 /* SecondLevelScene.swift in Sources */,
+				261FDC392A1CC3C600E2D02A /* CreditScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,7 +437,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.priskilla.TreasureHuntGame;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Treasure Hunt";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -437,7 +465,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.priskilla.TreasureHuntGame;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Treasure Hunt";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

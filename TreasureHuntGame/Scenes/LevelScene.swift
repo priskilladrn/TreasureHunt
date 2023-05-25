@@ -14,30 +14,36 @@ class LevelScene: SKScene {
         backgroundColor = UIColor(named: "Brown")!
         
         let label = SKLabelNode(fontNamed: "PixelGameFont")
-            label.text = "LEVEL  \(level)"
-            label.fontSize = 40
-            label.fontColor = UIColor(named: "Cream")!
-            label.position = CGPoint(x: size.width/2, y: size.height/2)
-            addChild(label)
+        label.text = "LEVEL  \(level)"
+        label.fontSize = 40
+        label.fontColor = UIColor(named: "Cream")!
+        label.position = CGPoint(x: size.width/2, y: size.height/2)
+        addChild(label)
         
         run(SKAction.sequence([
-            SKAction.wait(forDuration: 1.5),
+            SKAction.wait(forDuration: 1),
             SKAction.run() { [weak self] in
                 guard let `self` = self else { return }
                 let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
                 switch (level) {
                 case 1:
-                    let scene = FirstLevelScene(fileNamed: "FirstLevelScene")
-                    scene?.scaleMode = .aspectFill
-                    self.view?.presentScene(scene!, transition:reveal)
+                    let scene = StageScene(fileNamed: "FirstLevelScene")!
+                    scene.level = level
+                    scene.sandCount = 7
+                    scene.scaleMode = .aspectFill
+                    self.view?.presentScene(scene, transition:reveal)
                 case 2:
-                    let scene = SecondLevelScene(fileNamed: "SecondLevelScene")
-                    scene?.scaleMode = .aspectFill
-                    self.view?.presentScene(scene!, transition:reveal)
+                    let scene = StageScene(fileNamed: "SecondLevelScene")!
+                    scene.level = level
+                    scene.sandCount = 14
+                    scene.scaleMode = .aspectFill
+                    self.view?.presentScene(scene, transition:reveal)
                 case 3:
-                    let scene = ThirdLevelScene(fileNamed: "ThirdLevelScene")
-                    scene?.scaleMode = .aspectFill
-                    self.view?.presentScene(scene!, transition:reveal)
+                    let scene = StageScene(fileNamed: "ThirdLevelScene")!
+                    scene.level = level
+                    scene.sandCount = 23
+                    scene.scaleMode = .aspectFill
+                    self.view?.presentScene(scene, transition:reveal)
                 default:
                     let scene = GameScene()
                     scene.scaleMode = .aspectFill
