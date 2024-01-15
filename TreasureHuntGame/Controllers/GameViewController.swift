@@ -23,7 +23,7 @@ class GameViewController: UIViewController {
         let skView = view as! SKView
         skView.ignoresSiblingOrder = true
         skView.presentScene(scene)
-        skView.showsPhysics = true
+//        skView.showsPhysics = true
         
         playSaveSound()
     }
