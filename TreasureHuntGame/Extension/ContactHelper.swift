@@ -21,11 +21,13 @@ extension StageScene: SKPhysicsContactDelegate {
         let bitmaskA = contact.bodyA.categoryBitMask
         let bitmaskB = contact.bodyB.categoryBitMask
         
-        if (bitmaskA == bitMask.raycast.rawValue && bitmaskB == bitMask.sand.rawValue) {
+        if (bitmaskA == bitMask.raycast.rawValue && bitmaskB == bitMask.sand.rawValue && !isTouchEnded) {
             highlight.position = contact.bodyB.node!.position
+            isTouchEnded = false
             
-        } else if (bitmaskA == bitMask.sand.rawValue && bitmaskB == bitMask.raycast.rawValue) {
+        } else if (bitmaskA == bitMask.sand.rawValue && bitmaskB == bitMask.raycast.rawValue && !isTouchEnded) {
             highlight.position = contact.bodyA.node!.position
+            isTouchEnded = false
         }
     }
 }

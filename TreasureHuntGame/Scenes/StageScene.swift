@@ -38,6 +38,8 @@ class StageScene: SKScene {
     var sandCount: Int = 0
     var level: Int = 0
     
+    var isTouchEnded: Bool = true
+    
     override func didMove(to view: SKView) {
         physicsWorld.contactDelegate = self
         
@@ -101,8 +103,8 @@ class StageScene: SKScene {
     func randomPos() -> CGPoint {
         guard let index = sandArray.indices.randomElement() else {
             return .zero
-            }
-            defer { sandArray.remove(at: index) }
+        }
+        defer { sandArray.remove(at: index) }
         return sandArray[index].position
     }
     
@@ -280,21 +282,29 @@ class StageScene: SKScene {
         if herMovesRight == true {
             person.position.x += 5
             xDirection = 1
+            isTouchEnded = false
         }
         
         if herMovesLeft == true {
             person.position.x -= 5
             xDirection = -1
+            isTouchEnded = false
         }
         
         if herMovesUp == true {
             person.position.y += 5
             yDirection = 1
+            isTouchEnded = false
         }
         
         if herMovesDown == true {
             person.position.y -= 5
             yDirection = -1
+            isTouchEnded = false
+        }
+        
+        if !herMovesUp && !herMovesDown && !herMovesLeft && !herMovesRight {
+            isTouchEnded = true
         }
         
         let lastPos = (xDirection == 0 && yDirection == 0) ? lastRayPos : person.position
