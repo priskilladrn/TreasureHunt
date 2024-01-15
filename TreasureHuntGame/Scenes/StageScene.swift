@@ -38,7 +38,7 @@ class StageScene: SKScene {
     var sandCount: Int = 0
     var level: Int = 0
     
-    var isTouchEnded: Bool = true
+    var isTouchEnded: Bool = false
     
     override func didMove(to view: SKView) {
         physicsWorld.contactDelegate = self
@@ -71,7 +71,6 @@ class StageScene: SKScene {
         lastRayPos = CGPoint(x: person.position.x + 70, y: person.position.y)
         
         highlight = childNode(withName: "highlited") as! SKSpriteNode
-        highlight.position = lastRayPos
         
         treasurePos = randomPos()
         bombPos = randomPos()
@@ -203,7 +202,25 @@ class StageScene: SKScene {
                         if highlightPosition == treasurePosition {
                             let generator = UIImpactFeedbackGenerator(style: .medium)
                             generator.impactOccurred()
-                            treasure.isHidden = false
+                            self.run(SKAction.sequence([
+                                SKAction.run { [self] in
+                                    self.treasure.texture = SKTexture(imageNamed: "treasure_close")
+                                    self.treasure.isHidden = false
+                                },
+                                SKAction.wait(forDuration: 0.1),
+                                SKAction.run { [self] in
+                                    self.treasure.texture = SKTexture(imageNamed: "treasure_open_little")
+                                },
+                                SKAction.wait(forDuration: 0.1),
+                                SKAction.run { [self] in
+                                    self.treasure.texture = SKTexture(imageNamed: "treasure_open_half")
+                                },
+                                SKAction.wait(forDuration: 0.1),
+                                SKAction.run { [self] in
+                                    self.treasure.texture = SKTexture(imageNamed: "Treasure")
+                                },
+                                SKAction.wait(forDuration: 0.2)
+                            ]))
                             gameover = true
                             level += 1
                             run(SKAction.sequence([

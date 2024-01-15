@@ -19,29 +19,29 @@ class CreditScene: SKScene {
         title.text = titleName
         title.fontSize = 60
         title.fontColor = UIColor(named: "Cream")!
-        title.position = CGPoint(x: size.width/2, y: size.height * 0.7)
+        title.position = CGPoint(x: size.width/2, y: size.height/2)
         addChild(title)
-        
-        let sound = SKLabelNode(fontNamed: font)
-        sound.text = "SOUND EFFECT: Pixabay"
-        sound.fontSize = 14
-        sound.fontColor = UIColor(named: "Cream")!
-        sound.position = CGPoint(x: size.width/2, y: size.height * 0.45)
-        addChild(sound)
-        
-        let asset = SKLabelNode(fontNamed: font)
-        asset.text = "VISUAL ASSET: Kenney"
-        asset.fontSize = 14
-        asset.fontColor = UIColor(named: "Cream")!
-        asset.position = CGPoint(x: size.width/2, y: size.height * 0.35)
-        addChild(asset)
-        
-        let music = SKLabelNode(fontNamed: font)
-        music.text = "MUSIC: Crystal Caverns By HeatleyBros"
-        music.fontSize = 14
-        music.fontColor = UIColor(named: "Cream")!
-        music.position = CGPoint(x: size.width/2, y: size.height * 0.25)
-        addChild(music)
+//        
+//        let sound = SKLabelNode(fontNamed: font)
+//        sound.text = "SOUND EFFECT: Pixabay"
+//        sound.fontSize = 14
+//        sound.fontColor = UIColor(named: "Cream")!
+//        sound.position = CGPoint(x: size.width/2, y: size.height * 0.45)
+//        addChild(sound)
+//        
+//        let asset = SKLabelNode(fontNamed: font)
+//        asset.text = "VISUAL ASSET: Kenney"
+//        asset.fontSize = 14
+//        asset.fontColor = UIColor(named: "Cream")!
+//        asset.position = CGPoint(x: size.width/2, y: size.height * 0.35)
+//        addChild(asset)
+//        
+//        let music = SKLabelNode(fontNamed: font)
+//        music.text = "MUSIC: Crystal Caverns By HeatleyBros"
+//        music.fontSize = 14
+//        music.fontColor = UIColor(named: "Cream")!
+//        music.position = CGPoint(x: size.width/2, y: size.height * 0.25)
+//        addChild(music)
         
         run(SKAction.sequence([
             SKAction.wait(forDuration: 2.0),
